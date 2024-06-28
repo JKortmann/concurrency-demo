@@ -6,6 +6,8 @@ import { MantineProvider } from '@mantine/core';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import {WebWorker} from './pages/WebWorker.tsx';
 import {NoWebWorker} from './pages/NoWebWorker.tsx';
+import {MinimumSingleWorker} from './pages/MinimumSingleWorker.tsx';
+import {MinimumForkJoinWorker} from './pages/MinimumForkJoinWorker.tsx';
 
 const router = createBrowserRouter([
     {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
     {
         path: '/web-worker',
         element: <WebWorker />,
+    },
+    {
+        path: '/minimum-single-worker',
+        element: <MinimumSingleWorker />,
+    },
+    {
+        path: '/minimum-fork-join-worker',
+        element: <MinimumForkJoinWorker />,
     }
 ])
 
